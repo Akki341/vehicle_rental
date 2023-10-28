@@ -28,6 +28,19 @@ class Vehicle {
     }
 }
 
+class ElectricCar extends Vehicle {
+    private int batteryCapacity;
+
+    public ElectricCar(String model, int year, double dailyRate, int batteryCapacity) {
+        super(model, year, dailyRate);
+        this.batteryCapacity = batteryCapacity;
+    }
+
+    public int getBatteryCapacity() {
+        return batteryCapacity;
+    }
+}
+
 class Customer {
     private String name;
     private String email;
